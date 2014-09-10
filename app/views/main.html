@@ -1,7 +1,7 @@
 <div>
   <li ng-repeat="question in quiz | orderBy:'difficulty' ">
-    <strong>{{ $index + 1 }}. {{ question.q }}</strong>
-    <br>
+    <h4>{{ $index + 1 }}. {{ question.q }}</h4>
     <button ng-repeat="option in question.options">{{ option.value }}</button>
+    <br>
   </li>
 </div>
