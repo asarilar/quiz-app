@@ -9,6 +9,8 @@
  */
 angular.module('quizApp')
   .controller('MainCtrl', function ($scope) {
+    $scope.score = 0;
+
     $scope.quiz = [
         {
           "q": "Who is the best ping pong player at FSA?",
@@ -34,4 +36,8 @@ angular.module('quizApp')
           'difficulty': 8
         }
       ];
+
+    $scope.checkAnswer = function(){
+
+    };
   });
